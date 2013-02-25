@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+	<section>
+		<h1>The Game (<span id="username_header"></span>)</h1>
+		<div id="login">
+			<label for="username">Username: </label>
+			<input id="login_username" name="username" type="text">
+			<br>
+			<label for="password">Password: </label>
+			<input id="login_password" name="password" type="text">
+			<br>
+			<button onclick="login()">Login</button>
+			<button onclick="createPlayer()">Create new player</button>
+		</div>
+		<div id="game" class="hidden">
+			<div id="action_panel">
+				<button class="knight">Spawn Knight</button>
+				<button class="archer">Spawn Archer</button>
+				<button class="warrior">Spawn Warrior</button>
+			</div>
+			<div id="game">
+				game elements
+			</div>
+		</div>
+	</section>
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="./script.js"></script>
+	<script src="./game.js"></script>
+
+</body>
+</html>
+
